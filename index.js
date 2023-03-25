@@ -1,0 +1,17 @@
+require("express-async-errors")
+const express = require("express")
+const { initDB } = require("./src/init/initDB")
+const { initErrorMiddleware } = require("./src/init/initErrorMiddleware")
+const cors = require("cors")
+
+const { initListen } = require("./src/init/initListen")
+const { initMiddleware } = require("./src/init/initMiddleware")
+const { initRoutes } = require("./src/init/initRoutes")
+
+const app = express()
+app.use(cors())
+initMiddleware(app)
+initDB()
+initRoutes(app)
+initListen(app)
+initErrorMiddleware(app)

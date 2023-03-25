@@ -1,0 +1,7 @@
+{
+	"jwtPrivateKey": "",
+	"db": "mongodb://localhost/mindcraft",
+	"aws_id": "",
+	"aws_secret": "",
+	"aws_bucket_name": ""
+}
