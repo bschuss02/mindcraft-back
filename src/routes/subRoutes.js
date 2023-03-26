@@ -27,7 +27,7 @@ var upload = multer({
 		bucket: aws_bucket_name,
 		key: function(req, file, cb) {
 			console.log(file)
-			cb(null, file.originalname) //use Date.now() for unique file keys
+			cb(null, `${Date.now()}____${file.originalname}`)
 		},
 	}),
 })
