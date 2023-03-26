@@ -9,7 +9,10 @@ const auth = require("../middleware/authMiddleware")
 const { Comp } = require("../models/CompModel")
 const { Sub } = require("../models/SubModel")
 const getError = require("../utils/getError")
-const { validateNewSub } = require("../validation/validateSubRoutes")
+const {
+	validateNewSub,
+	validateDeleteSub,
+} = require("../validation/validateSubRoutes")
 
 const subRoutes = express.Router()
 const aws_id = config.get("aws_id")
@@ -66,6 +69,25 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	await comp.save()
 	const submission = await Sub.findById(sub._id).populate("creator")
 	res.send({ submission })
+})
+
+subRoutes.delete("/", auth, async (req, res) => {
+	const result = validateDeleteSub(req.body)
+	if (result.error) return res.status(400).send(getError(result))
+	const { submissionId, competitionId } = result.value
+	const sub = await Sub.findById(submissionId)
+	if (!sub) return res.status(404).send("Submission not found")
+	if (sub.creator.toString() !== req.user._id.toString()) {
+		return res.status(403).send("You are not the creator of this submission")
+	}
+	const comp = await Comp.findById(competitionId)
+	if (!comp) return res.status(404).send("Competition not found")
+	comp.subs = comp.subs.filter(
+		(sub) => sub.toString() !== submissionId.toString(),
+	)
+	await comp.save()
+	await sub.deleteOne()
+	res.send({})
 })
 
 module.exports = { subRoutes }

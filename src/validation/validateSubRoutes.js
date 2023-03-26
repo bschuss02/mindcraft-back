@@ -12,4 +12,12 @@ function validateNewSub(subInfo) {
 	return schema.validate(subInfo)
 }
 
-module.exports = { validateNewSub }
+function validateDeleteSub(deleteSubInfo) {
+	const schema = Joi.object({
+		submissionId: Joi.string().required(),
+		competitionId: Joi.string().required(),
+	})
+	return schema.validate(deleteSubInfo)
+}
+
+module.exports = { validateNewSub, validateDeleteSub }
