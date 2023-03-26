@@ -6,6 +6,9 @@ var express = require("express"),
 	multerS3 = require("multer-s3")
 
 const auth = require("../middleware/authMiddleware")
+const { Sub } = require("../models/SubModel")
+const getError = require("../utils/getError")
+const { validateNewSub } = require("../validation/validateSubRoutes")
 
 const subRoutes = express.Router()
 const aws_id = config.get("aws_id")
@@ -33,10 +36,33 @@ var upload = multer({
 })
 
 subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
-	console.log("req.files", req.files)
 	const subMetadata = JSON.parse(req.body.subMetadata)
-	console.log("subMetadata", subMetadata)
-	res.send({ message: "Hello World!" })
+	const result = validateNewSub(subMetadata)
+	if (result.error) return res.status(400).send(getError(result))
+	let subInfo = result.value
+	const { competitionId, description, hideSubmission } = subInfo
+	const files = req.files
+	const fileData = files.map((file) => ({
+		originalFileName: file.originalname,
+		fileName: file.key,
+		mimeType: file.mimetype,
+		size: file.size,
+		uri: file.location,
+	}))
+	console.log("fileData", fileData)
+	const submissionData = {
+		competition: competitionId,
+		creator: req.user._id,
+		files: fileData,
+		description,
+		isPublic: !hideSubmission,
+	}
+	const sub = new Sub(submissionData)
+	console.log("sub1", sub)
+	await sub.save()
+	console.log("sub2", sub)
+	console.log("done")
+	res.send({})
 })
 
 module.exports = { subRoutes }
