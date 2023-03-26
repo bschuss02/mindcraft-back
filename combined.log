@@ -144,3 +144,24 @@
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:20:53.104Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:21:01.948Z"}
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:21:02.110Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:23:03.728Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:23:03.929Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:23:29.001Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:23:29.243Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:23:35.325Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:23:35.450Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:23:44.637Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:23:44.760Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:23:54.752Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:23:54.949Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:24:16.731Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:24:16.939Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:26:31.299Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:26:31.499Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:27:46.066Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:27:46.337Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:27:59.689Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:27:59.883Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T03:28:33.210Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T03:28:33.341Z"}
+{"level":"error","message":"AccessControlListNotSupported: The bucket does not allow ACLs\n    at Request.extractError (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/services/s3.js:711:35)\n    at Request.callListeners (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/sequential_executor.js:106:20)\n    at Request.emit (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/sequential_executor.js:78:10)\n    at Request.emit (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/request.js:686:14)\n    at Request.transition (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/request.js:22:10)\n    at AcceptorStateMachine.runTo (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/state_machine.js:14:12)\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/state_machine.js:26:10\n    at Request.<anonymous> (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/request.js:38:9)\n    at Request.<anonymous> (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/request.js:688:12)\n    at Request.callListeners (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/aws-sdk/lib/sequential_executor.js:116:18)","metadata":{"user":{"_id":"641f2703536dd1b699e82c63","iat":1679780248,"username":"user01"}},"timestamp":"2023-03-26T03:29:16.250Z"}
