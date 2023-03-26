@@ -54,6 +54,8 @@ compRouter.delete("/", auth, async (req, res) => {
 	if (comp.organizer.toString() !== req.user._id.toString()) {
 		return res.status(403).send("You are not the organizer of this competition")
 	}
+	const { subs } = comp
+	await Sub.deleteMany({ _id: { $in: subs } })
 	await comp.deleteOne()
 	res.send({})
 })
