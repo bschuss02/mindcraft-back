@@ -8,8 +8,14 @@ const { createObjectMap } = require("../utils/createObjectMap")
 const startupRouter = express.Router()
 
 startupRouter.get("/", async (req, res) => {
-	const message = "Hello World!"
-	res.send({ message })
+	// yeah ik this is really inefficient. Cry about it I dare you
+	const allComps = await Comp.find({}).sort({ createdAt: -1 })
+	const allSubs = await Sub.find({}).populate("creator")
+	const [allCompIds, allCompsMap] = createObjectMap(allComps)
+	const [allSubIds, allSubsMap] = createObjectMap(allSubs)
+	const compsMap = { ...allCompsMap }
+	const subsMap = { ...allSubsMap }
+	res.send({ allCompIds, compsMap, subsMap })
 })
 
 startupRouter.get("/withuser", auth, async (req, res) => {
@@ -18,9 +24,7 @@ startupRouter.get("/withuser", auth, async (req, res) => {
 		return res.status(404).send("User not found")
 	}
 	// yeah ik this is really inefficient. Cry about it I dare you
-	const allComps = await Comp.find({})
-		.populate("subs")
-		.sort({ createdAt: -1 })
+	const allComps = await Comp.find({}).sort({ createdAt: -1 })
 	const allSubs = await Sub.find({}).populate("creator")
 	const mySubs = await Sub.find({ creator: user._id }).sort({ createdAt: -1 })
 	const myComps = await Comp.find({ organizer: user._id }).populate("organizer")
