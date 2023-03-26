@@ -1,6 +1,8 @@
 const express = require("express")
 const auth = require("../middleware/authMiddleware")
+const { Comp } = require("../models/CompModel")
 const { User } = require("../models/UserModel")
+const { createObjectMap } = require("../utils/createObjectMap")
 
 const startupRouter = express.Router()
 
@@ -14,8 +16,10 @@ startupRouter.get("/withuser", auth, async (req, res) => {
 	if (!user) {
 		return res.status(404).send("User not found")
 	}
-	const message = "Hello World!"
-	res.send({ message, user })
+
+	// const allComps = await Comp.find({}).sort({ createdAt: -1 })
+	// const [allCompIds, allCompsMap] = createObjectMap(allComps)
+	res.send({ allCompIds, allCompsMap, user })
 })
 
 module.exports = { startupRouter }

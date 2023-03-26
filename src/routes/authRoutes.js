@@ -7,7 +7,6 @@ const {
 	validateLogin,
 } = require("../validation/validateAuthRoutes")
 const { User } = require("../models/UserModel")
-const getSelectedFields = require("../utils/getSelectedFields")
 
 const authRoutes = express.Router()
 
@@ -25,7 +24,7 @@ authRoutes.post("/signup", async (req, res) => {
 	let user = new User(userInfo)
 	await user.save()
 	const token = user.generateAuthToken()
-	user = await User.findById(user._id).select(getSelectedFields("User", []))
+	user = await User.findById(user._id).select("-password")
 	res.send({ user, token })
 })
 
@@ -42,7 +41,7 @@ authRoutes.get("/login", async (req, res) => {
 		return res.status(400).send("Username or password is invalid")
 	}
 	const token = user.generateAuthToken()
-	user = await User.findById(user._id).select(getSelectedFields("User", []))
+	user = await User.findById(user._id).select("-password")
 	res.send({ user, token })
 })
 
