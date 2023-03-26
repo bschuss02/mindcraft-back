@@ -6,6 +6,7 @@ const getError = require("../utils/getError")
 const {
 	validateNewComp,
 	validateSelectWinner,
+	validateDeleteComp,
 } = require("../validation/validateCompRoutes")
 
 const compRouter = express.Router()
@@ -42,6 +43,19 @@ compRouter.post("/selectWinner", auth, async (req, res) => {
 	await comp.save()
 	await sub.save()
 	res.send({ comp, sub })
+})
+
+compRouter.delete("/", auth, async (req, res) => {
+	const result = validateDeleteComp(req.body)
+	if (result.error) return res.status(400).send(getError(result))
+	const { competitionId } = result.value
+	const comp = await Comp.findById(competitionId)
+	if (!comp) return res.status(404).send("Competition not found")
+	if (comp.organizer.toString() !== req.user._id.toString()) {
+		return res.status(403).send("You are not the organizer of this competition")
+	}
+	await comp.deleteOne()
+	res.send({})
 })
 
 module.exports = { compRouter }

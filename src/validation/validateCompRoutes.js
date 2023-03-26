@@ -32,4 +32,11 @@ function validateSelectWinner(selectWinnerInfo) {
 	return schema.validate(selectWinnerInfo)
 }
 
-module.exports = { validateNewComp, validateSelectWinner }
+function validateDeleteComp(deleteCompInfo) {
+	const schema = Joi.object({
+		competitionId: Joi.string().required(),
+	})
+	return schema.validate(deleteCompInfo)
+}
+
+module.exports = { validateNewComp, validateSelectWinner, validateDeleteComp }

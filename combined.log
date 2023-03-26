@@ -410,3 +410,13 @@
 {"level":"error","message":"TypeError: sub.remove is not a function\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/src/routes/subRoutes.js:89:12\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"user":{"_id":"641fcfc061d2ff8b7dfb2834","iat":1679806400,"username":"user01"}},"timestamp":"2023-03-26T08:07:57.911Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:08:58.307Z"}
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:08:58.346Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:19:13.039Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:19:13.101Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:19:31.655Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:19:31.730Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:20:42.105Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:20:42.184Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:21:14.470Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:21:14.537Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T08:23:51.866Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T08:23:51.919Z"}
