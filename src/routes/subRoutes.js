@@ -45,6 +45,7 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	const comp = await Comp.findById(competitionId)
 	if (!comp) return res.status(404).send("Competition not found")
 	const files = req.files
+	if (files.length === 0) return res.status(400).send("Select a file to upload")
 	const fileData = files.map((file) => ({
 		originalFileName: file.originalname,
 		fileName: file.key,
@@ -61,10 +62,10 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	}
 	const sub = new Sub(submissionData)
 	await sub.save()
-	console.log("sub._id", sub._id)
 	comp.subs.push(sub._id)
 	await comp.save()
-	res.send({ sub })
+	const submission = await Sub.findById(sub._id).populate("creator")
+	res.send({ submission })
 })
 
 module.exports = { subRoutes }

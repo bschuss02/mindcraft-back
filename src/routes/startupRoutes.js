@@ -17,14 +17,13 @@ startupRouter.get("/withuser", auth, async (req, res) => {
 	if (!user) {
 		return res.status(404).send("User not found")
 	}
-	const allComps = await Comp.find({}).populate("subs")
-	const allSubs = await Sub.find({})
-		.populate("competition")
-		.populate("creator")
-	const mySubs = await Sub.find({ creator: user._id }).populate("competition")
-	const myComps = await Comp.find({ organizer: user._id })
+	// yeah ik this is really inefficient. Cry about it I dare you
+	const allComps = await Comp.find({})
 		.populate("subs")
-		.populate("organizer")
+		.sort({ createdAt: -1 })
+	const allSubs = await Sub.find({}).populate("creator")
+	const mySubs = await Sub.find({ creator: user._id }).sort({ createdAt: -1 })
+	const myComps = await Comp.find({ organizer: user._id }).populate("organizer")
 	const [allCompIds, allCompsMap] = createObjectMap(allComps)
 	const [allSubIds, allSubsMap] = createObjectMap(allSubs)
 	const [myCompIds, myCompsMap] = createObjectMap(myComps)
