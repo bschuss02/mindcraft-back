@@ -49,7 +49,6 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 		size: file.size,
 		uri: file.location,
 	}))
-	console.log("fileData", fileData)
 	const submissionData = {
 		competition: competitionId,
 		creator: req.user._id,
@@ -58,11 +57,8 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 		isPublic: !hideSubmission,
 	}
 	const sub = new Sub(submissionData)
-	console.log("sub1", sub)
 	await sub.save()
-	console.log("sub2", sub)
-	console.log("done")
-	res.send({})
+	res.send({ sub })
 })
 
 module.exports = { subRoutes }

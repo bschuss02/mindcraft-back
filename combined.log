@@ -237,3 +237,61 @@
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:14:22.454Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:14:34.483Z"}
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:14:34.517Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:15:48.681Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:15:48.719Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:16:31.055Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:16:31.124Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:17:37.817Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:17:37.858Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:17:42.029Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:17:42.131Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:18:37.706Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:18:37.796Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:22:43.475Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:22:43.514Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:24:03.711Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:24:03.832Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:24:40.171Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:24:40.208Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:24:50.588Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:24:50.637Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:24:52.527Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:24:52.576Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:24:57.104Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:24:57.141Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:25:04.565Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:25:04.610Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:25:10.737Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:25:10.771Z"}
+{"level":"error","message":"TypeError: Comp.aggregate(...).populate is not a function\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/src/routes/startupRoutes.js:35:4\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"user":{"_id":"641f2703536dd1b699e82c63","iat":1679780248,"username":"user01"}},"timestamp":"2023-03-26T04:25:17.129Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:25:34.661Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:25:34.721Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:28:03.923Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:28:03.969Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:39:58.790Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:39:58.857Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:42:07.510Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:42:07.548Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:42:14.022Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:42:14.119Z"}
+{"level":"error","message":"TypeError: Comp.populate(...).populate is not a function\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/src/routes/startupRoutes.js:49:5\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"user":{"_id":"641f2703536dd1b699e82c63","iat":1679780248,"username":"user01"}},"timestamp":"2023-03-26T04:42:16.730Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:42:40.514Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:42:40.634Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:42:57.197Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:42:57.231Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:43:28.750Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:43:28.892Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:43:50.680Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:43:50.911Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:44:34.953Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:44:34.995Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:46:57.952Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:46:57.988Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:47:21.577Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:47:21.665Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:47:35.170Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:47:35.228Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:50:44.777Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:50:44.851Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:50:54.731Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:50:54.777Z"}
