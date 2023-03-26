@@ -49,6 +49,10 @@ const compSchema = new mongoose.Schema(
 			ref: "Sub",
 			default: [],
 		},
+		winner: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: "Sub",
+		},
 	},
 	{ timestamps: true },
 )

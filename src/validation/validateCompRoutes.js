@@ -24,4 +24,12 @@ function validateNewComp(compInfo) {
 	return schema.validate(compInfo)
 }
 
-module.exports = { validateNewComp }
+function validateSelectWinner(selectWinnerInfo) {
+	const schema = Joi.object({
+		submissionId: Joi.string().required(),
+		competitionId: Joi.string().required(),
+	})
+	return schema.validate(selectWinnerInfo)
+}
+
+module.exports = { validateNewComp, validateSelectWinner }
