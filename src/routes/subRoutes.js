@@ -5,9 +5,10 @@ const multer = require("multer")
 const subRoutes = express.Router()
 const upload = multer()
 
-subRoutes.post("/", upload.any("photo"), async (req, res) => {
-	console.log("req.body", req.body)
+subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	console.log("req.files", req.files)
+	const subMetadata = JSON.parse(req.body.subMetadata)
+	console.log("subMetadata", subMetadata)
 	res.send({ message: "Hello World!" })
 })
 
