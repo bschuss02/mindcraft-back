@@ -16,9 +16,8 @@ startupRouter.get("/withuser", auth, async (req, res) => {
 	if (!user) {
 		return res.status(404).send("User not found")
 	}
-
-	// const allComps = await Comp.find({}).sort({ createdAt: -1 })
-	// const [allCompIds, allCompsMap] = createObjectMap(allComps)
+	const allComps = await Comp.find({}).sort({ createdAt: -1 })
+	const [allCompIds, allCompsMap] = createObjectMap(allComps)
 	res.send({ allCompIds, allCompsMap, user })
 })
 
