@@ -44,6 +44,11 @@ const compSchema = new mongoose.Schema(
 			required: true,
 			trim: true,
 		},
+		subs: {
+			type: [mongoose.Schema.Types.ObjectId],
+			ref: "Sub",
+			default: [],
+		},
 	},
 	{ timestamps: true },
 )

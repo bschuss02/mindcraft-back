@@ -6,6 +6,7 @@ var express = require("express"),
 	multerS3 = require("multer-s3")
 
 const auth = require("../middleware/authMiddleware")
+const { Comp } = require("../models/CompModel")
 const { Sub } = require("../models/SubModel")
 const getError = require("../utils/getError")
 const { validateNewSub } = require("../validation/validateSubRoutes")
@@ -41,6 +42,8 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	if (result.error) return res.status(400).send(getError(result))
 	let subInfo = result.value
 	const { competitionId, description, hideSubmission } = subInfo
+	const comp = await Comp.findById(competitionId)
+	if (!comp) return res.status(404).send("Competition not found")
 	const files = req.files
 	const fileData = files.map((file) => ({
 		originalFileName: file.originalname,
@@ -58,6 +61,9 @@ subRoutes.post("/", auth, upload.any("files"), async (req, res) => {
 	}
 	const sub = new Sub(submissionData)
 	await sub.save()
+	console.log("sub._id", sub._id)
+	comp.subs.push(sub._id)
+	await comp.save()
 	res.send({ sub })
 })
 

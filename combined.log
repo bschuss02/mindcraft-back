@@ -295,3 +295,24 @@
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:50:44.851Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:50:54.731Z"}
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:50:54.777Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:52:18.939Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:52:18.983Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:53:03.079Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:53:03.127Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:54:56.622Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:54:56.707Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:55:53.955Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:55:53.995Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:56:49.753Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:56:49.803Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:57:45.778Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:57:45.854Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:59:02.506Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:59:02.560Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:59:11.618Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:59:11.702Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'populate')\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/src/routes/startupRoutes.js:20:35\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","metadata":{"user":{"_id":"641fcfc061d2ff8b7dfb2834","iat":1679806400,"username":"user01"}},"timestamp":"2023-03-26T04:59:14.093Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T04:59:21.970Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T04:59:22.028Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T05:00:37.658Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T05:00:37.703Z"}
