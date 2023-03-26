@@ -17,7 +17,7 @@ function checkConfigs() {
 	if (!aws_secret) {
 		throw new Error("FATAL ERROR: aws_secret is not defined.")
 	}
-	const aws_bucket = config.get("aws_bucket_name")
+	const aws_bucket_name = config.get("aws_bucket_name")
 	if (!aws_bucket_name) {
 		throw new Error("FATAL ERROR: aws_bucket_name is not defined.")
 	}
