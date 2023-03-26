@@ -4,3 +4,42 @@
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-25T16:11:29.002Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-25T16:11:33.136Z"}
 {"level":"info","message":"Connected to db...","timestamp":"2023-03-25T16:11:33.169Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:33:37.636Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:33:37.804Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:34:23.006Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:34:23.062Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:34:35.664Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:34:35.697Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:37:14.378Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:37:14.411Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:37:26.991Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:37:27.028Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:38:24.299Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:38:24.375Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:38:40.208Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:38:40.245Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:38:57.734Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:38:57.793Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:39:03.645Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:39:03.708Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:40:04.653Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:40:04.731Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:40:40.834Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:40:40.947Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:53:07.446Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:53:07.500Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:53:38.440Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:53:38.512Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:54:09.315Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:54:09.345Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:54:38.316Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:54:38.372Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:55:23.217Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:55:23.254Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:55:28.918Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:55:28.969Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T00:55:38.409Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T00:55:38.523Z"}
+{"level":"error","message":"ValidationError: Comp validation failed: organizer: Path `organizer` is required.\n    at model.Document.invalidate (/Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/mongoose/lib/document.js:3080:32)\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/mongoose/lib/document.js:2873:17\n    at /Users/Benjamin/Dev/hoohacks/mindcraft-back/node_modules/mongoose/lib/schematype.js:1350:9\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)","metadata":{"user":{"_id":"641f2703536dd1b699e82c63","iat":1679780248,"username":"user01"}},"timestamp":"2023-03-26T01:00:17.695Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2023-03-26T01:00:29.180Z"}
+{"level":"info","message":"Connected to db...","timestamp":"2023-03-26T01:00:29.238Z"}
